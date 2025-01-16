@@ -12,7 +12,7 @@ class PizzaShop extends EventEmitter{
     }
 
     displayOrder(){
-        console.log(this.orderNumber)
+        console.log(`current order is : ${this.orderNumber}`)
     }
 }
 

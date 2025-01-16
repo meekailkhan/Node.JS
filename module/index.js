@@ -16,11 +16,15 @@
 // console.log(superHero2.getName())
 
 const PizzaShop = require('./pizza-shop');
+const DrinkMachine = require('./drink-machine');
 
-const pizzaShop = new PizzaShop()
+
+const pizzaShop = new PizzaShop();
+const drinkMachine = new DrinkMachine()
 
 pizzaShop.on('order',(size,type)=>{
     console.log(`order recived! we prepaired pizza with ${size} and topping ${type}`)
+    drinkMachine.serveDrink(size)
 })
 
 pizzaShop.displayOrder()
